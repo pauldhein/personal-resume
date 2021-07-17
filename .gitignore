@@ -1,3 +1,6 @@
+# MacOS files
+*.DS_Store
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -240,3 +243,6 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+# Additional TeX files
+*__latexindent_temp.tex
