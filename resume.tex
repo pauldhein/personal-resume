@@ -1,4 +1,4 @@
-%!TEX TS-program = xelatex
+%!TEX program = xelatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
 %
@@ -21,10 +21,14 @@
 \documentclass[12pt, letterpaper]{awesome-cv}
 
 \usepackage{multicol}
+\usepackage{etoolbox} % http://ctan.org/pkg/etoolbox
+
+% \usepackage{soul}
+% \newcommand{\hyper}[2]{\href{#1}{\color{gray}\setulcolor{gray}\ul{#2}}}
 
 % Configure page margins with geometry
 % NOTE: 0.75 inch width -- 1.905cm
-% \geometry{left=1.27cm, top=0.5in, right=1.27cm, bottom=0.5in, footskip=0.5cm}
+\geometry{left=1.27cm, top=0.5in, right=1.27cm, bottom=0.5in, footskip=0.05cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -39,6 +43,12 @@
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 
+\newcommand{\separatedskills}[2][\,\, \textbullet \ \,\,]{%
+  \def\nextitem{\def\nextitem{#1}}% Separator
+  \renewcommand*{\do}[1]{\nextitem\skillsetstyle{##1}}% How to process each item
+  \docsvlist{#2}% Process list
+}
+
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
@@ -46,9 +56,9 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{}{Paul Hein}
-\position{AI/ML Specialist{\enskip\cdotp\enskip}Software Engineer}
+\position{Software Engineer{\enskip\cdotp\enskip}Big Data/ML Specialist}
 
-\homeaddr{Ann Arbor, MI}
+\homeaddr{Redmond, WA}
 \mobile{(+1) 520-289-9886}
 \email{paul.d.hein@gmail.com}
 \github{github.com/pauldhein}
@@ -74,25 +84,25 @@
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Paul Hein~~~·~~~Résumé}
-  {\thepage}
+% \makecvfooter
+%   {\today}
+%   {Paul Hein~~~·~~~Résumé}
+%   {\thepage}
 
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\vspace{-0.55cm}
-\input{resume/summary.tex}
-\vspace{-0.55cm}
+% \vspace{-0.55cm}
+% \input{resume/summary.tex}
+\vspace{-0.3cm}
 \input{resume/education.tex}
-\vspace{-0.4cm}
+\vspace{-0.8cm}
 \input{resume/experience.tex}
-\vspace{-0.4cm}
+\vspace{-0.3cm}
 \input{resume/projects.tex}
-\vspace{-0.4cm}
+\vspace{-0.3cm}
 \input{resume/skills.tex}
 % \vspace{-0.5cm}
 % \input{resume/awards.tex}
