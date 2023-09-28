@@ -28,7 +28,8 @@
 
 % Configure page margins with geometry
 % NOTE: 0.75 inch width -- 1.905cm
-\geometry{left=1.27cm, top=0.5in, right=1.27cm, bottom=0.5in, footskip=0.05cm}
+\geometry{left=1.27cm, top=0.5in, right=1.27cm, bottom=0.5in, footskip=0.2cm}
+% \geometry{left=1.27cm, top=0.5in, right=1.27cm, bottom=0.5in, footskip=0.2cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -56,7 +57,7 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{}{Paul Hein}
-\position{Software Engineer{\enskip\cdotp\enskip}Big Data/ML Specialist}
+\position{Software Engineer{\enskip\cdotp\enskip}Big Data Specialist}
 
 \homeaddr{Redmond, WA}
 \mobile{(+1) 520-289-9886}
@@ -84,30 +85,24 @@
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {}
-  {\today}
-  % {Paul Hein~~~·~~~Résumé}
-  {}
-  % {\thepage}
+% \makecvfooter
+%   {}
+%   {\today}
+%   {}
 
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-% \vspace{-0.55cm}
-% \input{resume/summary.tex}
-\vspace{-0.3cm}
+\vspace{-0.4cm}
 \input{resume/education.tex}
-\vspace{-0.8cm}
+\vspace{-0.3cm}
 \input{resume/experience.tex}
-\vspace{-0.3cm}
+\vspace{-0.4cm}
 \input{resume/projects.tex}
-\vspace{-0.3cm}
+\vspace{-0.4cm}
 \input{resume/skills.tex}
-% \vspace{-0.5cm}
-% \input{resume/awards.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
