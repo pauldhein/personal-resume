@@ -21,7 +21,7 @@
 \documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins with geometry
-% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=2.54cm, top=2.54cm, right=2.54cm, bottom=2.54cm, footskip=1.27cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -44,7 +44,8 @@
 \setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
-% \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+% \renewcommand{\acvHeaderSocialSep}{\, \textbar \ \,}
+\renewcommand{\acvHeaderSocialSep}{\\}
 
 
 %-------------------------------------------------------------------------------
@@ -52,16 +53,16 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,left]{./examples/profile}
+% \photo[circle,noedge,left]{./cover_letters/professional_headshot_closeup.jpg}
 \name{}{Paul Hein}
-\position{AI/ML Specialist{\enskip\cdotp\enskip}Software Engineer}
-\address{3410 Nixon Road Unit 322 \\ Ann Arbor, MI 48105, USA}
+\position{Software Engineer{\enskip\cdotp\enskip}Big Data Specialist}
+\address{6453 139th Pl NE APT 43 \\ Redmond, WA 98052}
 
-% \mobile{(+82) 10-9030-1843}
-% \email{posquit0.bj@gmail.com}
+\mobile{(+1) 520-289-9886}
+\email{paul.d.hein@gmail.com}
 % \homepage{www.posquit0.com}
-% \github{posquit0}
-% \linkedin{posquit0}
+% \github{pauldhein}
+% \linkedin{pauldhein}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -69,7 +70,7 @@
 % \reddit{reddit-id}
 % \medium{madium-id}
 % \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
+% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
@@ -80,9 +81,14 @@
 %	LETTER INFORMATION
 %	All of the below lines must be filled out
 %-------------------------------------------------------------------------------
-\input{cover_letters/knexus/headline.tex}
+\input{cover_letters/AICS/headline.tex}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+% \lettertitle{Application for Machine Learning Engineer}
+
 % How the letter is opened
-\letteropening{Dear hiring team,}
+\letteropening{Dear Hiring Team,}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
@@ -98,10 +104,10 @@
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Paul Hein~~~·~~~Cover Letter}
-  {\thepage}
+% \makecvfooter
+%   {}
+%   {Cover Letter}
+%   {}
 
 % Print the title with above letter informations
 \makelettertitle
@@ -111,16 +117,7 @@
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-  \input{cover_letters/knexus/body.tex}
-
-% \lettersection{About Me}
-% Add text here.
-
-% \lettersection{Why Google?}
-% Add text here.
-
-% \lettersection{Why Me?}
-% Add text here.
+  \input{cover_letters/AICS/body.tex}
 
 \end{cvletter}
 
