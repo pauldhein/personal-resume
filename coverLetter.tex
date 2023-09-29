@@ -13,7 +13,6 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
 
-
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
@@ -21,17 +20,12 @@
 \documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=2.54cm, top=2.54cm, right=2.54cm, bottom=2.54cm, footskip=1.27cm}
+\geometry{left=2.54cm, top=0.5in, right=2.54cm, bottom=0.5in, footskip=0.25in}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
 
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -39,6 +33,7 @@
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
 % \definecolor{lighttext}{HTML}{999999}
+\definecolor{graytext}{HTML}{414141}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{false}
@@ -46,7 +41,6 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 % \renewcommand{\acvHeaderSocialSep}{\, \textbar \ \,}
 \renewcommand{\acvHeaderSocialSep}{\\}
-
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -60,28 +54,14 @@
 
 \mobile{(+1) 520-289-9886}
 \email{paul.d.hein@gmail.com}
-% \homepage{www.posquit0.com}
-% \github{pauldhein}
-% \linkedin{pauldhein}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
-
-% \quote{``Be the change that you want to see in the world."}
-
 
 %-------------------------------------------------------------------------------
 %	LETTER INFORMATION
 %	All of the below lines must be filled out
 %-------------------------------------------------------------------------------
+% Add the company specific headline including name and address
 \input{cover_letters/AIND/headline.tex}
+
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
@@ -98,8 +78,7 @@
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
-% Give optional argument to change alignment(C: center, L: left, R: right)
+% Print the header with above informations [align(C: center, L: left, R: right)]
 \makecvheader[R]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
@@ -120,7 +99,6 @@
   \input{cover_letters/AIND/body.tex}
 
 \end{cvletter}
-
 
 %-------------------------------------------------------------------------------
 % Print the signature and enclosures with above letter informations
